@@ -1,0 +1,103 @@
+.Home {
+  text-align: center;
+}
+
+.Home-logo {
+  animation: Home-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+@keyframes Home-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.Home-header {
+  padding: 20px;
+  color: white;
+  background: linear-gradient(-135deg, #AB6DFF 0%, #733BFF 100%);
+}
+
+.Home-button {
+  background: #56CCF2;
+  border: none;
+  width: 300px;
+  height: 70px;
+  font-size: 24px;
+  font-weight: 500;
+  border-radius: 35px;
+  margin: 30px 20px;
+  transition: 1s;
+  transition-timing-function: cubic-bezier(0.2, 2, 0.2, 1);
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.25);
+}
+
+.Home-button:hover {
+  background:white;
+  box-shadow: 0 40px 80px rgba(0, 0, 0, 0.5);
+  transform: translateY(-2px) scale;
+  transform: translateY(-10px) scale(1.2, 1.2);
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+.Home-title {
+  font-size: 60px;
+  animation: fade-in 2s forwards;
+  opacity: 0;
+}
+
+@media (max-width: 640px) {
+  .Home-title {
+    font-size: 50px;
+  }
+}
+
+.Home-text {
+  font-size: 20px;
+  animation: fade-in 2s forwards;
+  animation-delay: .2s;
+  opacity: 0;
+}
+
+.Home-grid {
+  display: grid;
+  grid-template-columns: 300px auto;
+  grid-gap: 20px;
+  padding: 50px;
+}
+
+.Home-card {
+  width: 200px;
+  height: 200px;
+  background: linear-gradient(-135deg, #AB6DFF 0%, #733BFF 100%);
+  border-radius: 14px;
+}
+
+.Home-intro {
+  font-size: 20px;
+  text-align: left;
+}
+
+.Home-gallery {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+  width: 640px;
+  margin: 0 auto;
+}
+
+@media (max-width: 640px) {
+  .Home-gallery {
+    width: 420px;
+  }
+}

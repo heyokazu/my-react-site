@@ -1,0 +1,36 @@
+.Header {
+    position: fixed;
+    z-index: 100;
+    display: grid;
+    grid-template-columns: auto 40px 160px;
+    grid-gap: 20px;
+    width: 100%;
+    color: white;
+    font-size: 20px;
+    padding: 30px;
+    background: #000;
+    opacity: 0;
+    transition: 1s;
+}
+
+.Header-show {
+    opacity: 1;
+}
+
+.Header-link {
+    color: white;
+    text-decoration: none;
+    padding: 4px;
+    transition: 1s;
+    border-radius: 10px;
+}
+
+.Header-link:hover {
+    background: white;
+    color: black;
+}
+
+.Header-logo {
+    width: 40px;
+}
+
